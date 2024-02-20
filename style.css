@@ -1,0 +1,67 @@
+/* Common Css Start  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+/* Common Css End  */
+.main-wrapper{
+    color: #FFF;
+    width: 700px;
+    margin: 0px auto;
+    text-align: center;
+    background-image: url(https://i.postimg.cc/gcydmW3N/p2.png);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.our-text-area{
+    margin-top: 83px;
+}
+.our-text-area h1{
+    font-size: 60px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.our-text-area h2{
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.our-text-area a{
+    text-decoration: none;
+    color: white;
+    background-color: skyblue;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.our-text-area a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: blue;
+    border-radius: 15px;
+    z-index: -1;
+    transition: .3s;
+    
+}
+.our-text-area a:hover::before{
+    width: 100%;
+}
+.our-text-area p{
+    color: rgba(155, 152, 152, 0.857);
+    padding-top: 200px;
+    font-weight: 700;
+}
